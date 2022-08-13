@@ -15,6 +15,11 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+.noline {
+  color: lightcoral;
+  display:inline;
+}
+
 :root {
 
   /**
@@ -128,6 +133,8 @@
 a { text-decoration: none; }
 
 li { list-style: none; }
+
+.list_style { list-style: inside;}
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -504,7 +511,11 @@ main {
   line-height: 1.6;
 }
 
-.about-text p { margin-bottom: 15px; }
+.about-text p { margin-bottom: 30px; }
+
+.rounded-corners {
+  border-radius: 30px;
+}
 
 
 
@@ -939,7 +950,7 @@ main {
   margin-bottom: 10px;
 }
 
-.project-item { display: none; }
+.project-item { display: none; width: 100%;}
 
 .project-item.active {
   display: block;
@@ -1290,7 +1301,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar, article {
     width: 520px;
-    margin-inline: auto;
+    margin-inline: 20px;
     padding: 30px;
   }
 
@@ -1373,7 +1384,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
+  .navbar { border-radius: 20px 20px 0 0; 
+    margin-inline: 20px;
+  }
 
   .navbar-list { gap: 20px; }
 
@@ -1395,7 +1408,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 18px;
+    gap: 15px;
     padding: 30px;
   }
 
