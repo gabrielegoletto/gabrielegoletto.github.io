@@ -122,7 +122,8 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img src="./static/images/teaser.png" alt="teaser" style="width:70%; display: block; margin: 0 auto;">
+        <img src="./static/images/teaser.png" alt="teaser"
+          style="width:70%; display: block; margin: 0 auto; max-width: 480px;">
         <br>
         <p class="has-text-centered">
           Our work aims to detect and identify activity-centric zones in real-world conditions and leverage their
@@ -132,7 +133,7 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top: 0;">
+  <section class="hero is-light" style="padding: 1rem;">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -206,9 +207,49 @@
     </div>
   </section>
 
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item is-centered">
+            <!-- Your image here -->
+            <img src="static/images/results_ek100.png" alt="research area" width="90%"/>
+            <h3 class="subtitle has-text-centered is-6">
+              <br>
+              <p>
+                Results on the validation set of the EPIC-Kitchens-100 dataset in Unsupervised Domain Adaptation (UDA) and Domain Generalization (DG) settings using RGB, Optical Flow, and Audio.
+                To ensure a fair comparison, we report the Source Only performance for each method.
+                Our results are averaged over three runs.<br>Best in <strong>bold</strong>. Second best is <u>underlined</u>.
+                <sup>†</sup>Reproduced.
 
-
-
+                <br><br>
+            </p>
+            </h3>
+          </div>
+          <div class="item is-centered">
+            <!-- Your image here -->
+            <img src="static/images/results_argo1m.png" alt="edgeres" width="90%"/>
+            <h3 class="subtitle has-text-centered is-6">
+              <br><br>
+              <p>
+                Best results in <strong>bold</strong>, second best <u>underlined</u>. 
+                <sup>†</sup>: Domain labels required during training. 
+                D: distribution matching, 
+                A: adversarial learning, 
+                M: label-wise mix-up, 
+                P: domain-prompts, 
+                R: reconstruction, 
+                T: video-text association, 
+                Z: activity-centric zone learning.
+            </p>
+            <br><br>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
