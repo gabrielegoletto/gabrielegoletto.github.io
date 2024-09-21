@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Egocentric zone-aware action recognition across environments">
+  <meta name="keywords" content="Egocentric vision, Domain generalization, CLIP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Egocentric zone-aware action recognition across environments</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Egocentric zone-aware action recognition across environments</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=K0efPssAAAAJ&hl=it&oi=ao">Simone Alberto
+                  Peirone</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://gabrielegoletto.github.io">Gabriele Goletto</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=GIJ3h4AAAAAJ&hl=it&oi=ao">Mirco Planamente</a>,
+              </span><br>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=YWhB9iYAAAAJ">Andrea Bottino</a>,
+              </span>
+              <span class="author-block"></span>
+              <a href="https://scholar.google.com/citations?user=mHbdIAwAAAAJ&hl=en">Barbara Caputo</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=i4rm0tYAAAAJ&hl=it&oi=ao">Giuseppe Averta</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup></sup>Politecnico di Torino</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV_ID>" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV_ID>.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/sapeirone/EgoZAR"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://colab.research.google.com/github/sapeirone/EgoZAR/blob/main/run.ipynb"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg"
+                        alt="Google Colab" style="height: 4.5em;">
+                    </span>
+                    <span>Colab</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/teaser.png" alt="teaser" style="width:70%; display: block; margin: 0 auto;">
+        <br>
+        <p class="has-text-centered">
+          Our work aims to detect and identify activity-centric zones in real-world conditions and leverage their
+          domain-agnostic representations to enhance the generalization of first-person action recognition models.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Human activities exhibit a strong correlation between actions and the places where these are performed,
+              such
+              as washing something at a sink. More specifically, in daily living environments we may identify particular
+              locations, hereinafter named
+              <i>activity-centric zones</i>, which may afford a set of homogeneous actions.
+              Their knowledge can serve as a prior to favor vision models to recognize human activities.
+            </p>
+            <p>
+              However, the appearance of these zones is scene-specific, limiting the transferability of this prior
+              information to unfamiliar areas and domains. This problem is particularly relevant in egocentric vision,
+              where the environment takes up most of the image, making it even more difficult to separate the action
+              from
+              the context.
+            </p>
+            <p>
+              In this paper, we discuss the importance of decoupling the domain-specific appearance of activity-centric
+              zones from their universal, domain-agnostic representations, and show how the latter can improve the
+              cross-domain transferability of Egocentric Action Recognition (EAR) models.
+              We validate our solution on the Epic-Kitchens 100 and Argo1M datasets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3">Problem</h2>
+      <img src="./static/images/clustering.png" alt="clustering" style="width:100%; display: block; margin: 0 auto;">
+      <br>
+      <p class="has-text-centered">
+        Feature space of an EAR model. On the left, features from a model trained and tested in the same environment are
+        well separated by location. On the right, when applied to a new environment, this clustering effect disappears,
+        and different locations map to the same region in the feature space.
+      </p>
+    </div>
+  </div>
+  </section>
+
+  <section class="hero">
+    <div class="container is-max-desktop">
+      <div class="hero-body has-text-centered">
+        <h2 class="title is-3">Method</h2>
+        <img src="./static/images/network.png" alt="clustering" style="width:80%; display: block; margin: 0 auto;">
+        <br>
+        <p class="has-text-centered">
+          <span class="egozar inline">EgoZAR</span> uses domain-agnostic features to identify activity zones in
+          egocentric
+          videos,
+          improving how action recognition models generalize across different environments. It leverages CLIP features
+          as
+          a
+          domain-agnostic representation of the surroundings and clusters these features into location-based groups,
+          which
+          are then integrated into the action recognition process. By separating location and motion information through
+          attention-based modules, we reduce environmental bias, enabling the model to better recognize actions in
+          various
+          settings. The approach works across multiple modalities, enhancing action predictions with contextual location
+          insights.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{peirone2024,
+  author    = {Peirone, Simone Alberto and Goletto, Gabriele and Planamente, Mirco and Bottino, Andrea and Caputo, Barbara and Averta, Giuseppe},
+  title     = {Egocentric zone-aware action recognition across environments},
+  journal   = {arXiv preprint arXiv:TODO},
+  year      = {2024},
+}</code></pre>
+      <p>
+        <b>Acknowledgements</b> <br>
+        This study was supported in part by the CINI Consortium through the VIDESEC project and carried out within the
+        FAIR - Future Artificial Intelligence Research and received funding from the European Union Next-GenerationEU
+        (PIANO NAZIONALE DI RIPRESA E RESILIENZA (PNRR) - MISSIONE 4 COMPONENTE 2, INVESTIMENTO 1.3 - D.D. 1555
+        11/10/2022, PE00000013). This manuscript reflects only the authors’ views and opinions, neither the European
+        Union nor the European Commission can be considered responsible for them. <br>G. Goletto is supported by PON
+        “Ricerca e Innovazione” 2014-2020 - DM 1061/2021 funds.
+      </p>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a href="https://github.com/nerfies/nerfies.github.io" style="color: #aaa">Original
+          Website Template</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
